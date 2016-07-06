@@ -1,0 +1,48 @@
+name: Håkon Olsnes
+description: Traveller, photographer, philosopher etc.
+meta_description: "Your New Jekyll Site, Blogging about stuffs"
+
+aboutPage: true
+
+paginate: 20
+
+timezone: Europe/Berlin
+
+highlighter: rouge
+
+baseurl: /
+domain_name: 'http://yourblog-domain.com'
+google_analytics: 'UA-XXXXXXXX-X'
+disqus: false
+disqus_shortname: 'your-disqus-shortname'
+
+# Details for the RSS feed generator
+url:            'http://your-blog-url.example.com'
+author:         Håkon Olsnes
+authorTwitter:  'YourTwitterUsername'
+
+permalink:       /:year/:title/
+
+defaults:
+    -
+        scope:
+            path: "" # empty string for all files
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: "" # empty string for all files
+            type: posts
+        values:
+            layout: post
+    -
+        scope:
+            path: ""
+            type: drafts
+        values:
+            layout: post
+            
+            
+            # Gems
+gems: [jekyll-paginate]
